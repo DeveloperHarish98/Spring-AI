@@ -3,16 +3,6 @@ spring:
     name: my-ai-app
   ai:
     openai:
-      api-key: ${GROQ_API_KEY}
-      base-url: https://api.groq.com/openai
-      chat:
-        api-key: ${GROQ_API_KEY}
-        base-url: https://api.groq.com/openai
-        options:
-          model: llama-3.3-70b-versatile
-          temperature: 0.7
-          max-tokens: 8000
-
   datasource:
     url: jdbc:h2:mem:springAiDatabase
     driverClassName: org.h2.Driver
